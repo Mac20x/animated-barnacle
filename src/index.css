@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #fce4ec 0%, #e8f5e9 50%, #e3f2fd 100%);
+}
+
+.login-card {
+  background: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 440px;
+  padding: 44px;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.sign-in-button {
+  background-color: #0067b8;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 0;
+  font-weight: 400;
+  font-size: 14px;
+  min-width: 108px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.1s ease;
+  border: none;
+  outline: none;
+}
+
+.sign-in-button:hover {
+  background-color: #005da6;
+}
+
+.sign-in-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.input-field {
+  width: 100%;
+  padding: 6px 10px;
+  border: none;
+  border-bottom: 1px solid #E1E1E1;
+  font-size: 15px;
+  line-height: 20px;
+  outline: none;
+  background: transparent;
+  transition: border-color 0.2s ease;
+}
+
+.input-field:focus {
+  border-bottom: 1px solid #0078D4;
+}
+
+/* Options button styles */
+button.w-full {
+  background: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+  border-radius: 0;
+}
+
+button.w-full:hover {
+  background-color: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
